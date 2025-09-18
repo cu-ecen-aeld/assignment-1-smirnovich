@@ -8,7 +8,7 @@ fi
 filesdir=$1
 searchstr=$2
 
-if test $filesdir
+if test $filesdir 
 then
 	nolines=$(ls $filesdir | grep searchstr | wc -l)
 	nofiles=$(ls $filesdir | wc -l)
