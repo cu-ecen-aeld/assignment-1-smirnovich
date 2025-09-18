@@ -10,7 +10,8 @@ searchstr=$2
 
 if test $filesdir 
 then
-	nolines=$(ls $filesdir | grep searchstr | wc -l)
+	nolines=$(ls $filesdir | grep $searchstr | wc -l)
+	echo $nolines
 	nofiles=$(ls $filesdir | wc -l)
 	echo "The number of files are $nofiles and the number of matching lines are $nolines"
 else
