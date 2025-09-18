@@ -4,7 +4,7 @@ if [ $num -lt 2 ];
 then
 	return 1
 fi
-
+ 
 filesdir=$1
 searchstr=$2
 
